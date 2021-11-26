@@ -1,0 +1,16 @@
+keycloak:
+  # ?????public?client
+  public-client: true
+  # keycloak???
+  auth-server-url: https://abfeathers.com/auth
+  # keycloak??realm
+  realm: Abfeathers
+  resource: test-spring-boot
+  ssl-required: external
+  cors: true
+  securityConstraints:
+  - authRoles: user-role # ??????user-role??????
+    securityCollections:
+    - name: user-role-mappings # name?????
+      patterns:
+        - /articles
