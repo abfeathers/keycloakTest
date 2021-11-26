@@ -1,3 +1,5 @@
+server:
+  port: 8081
 keycloak:
   # ?????public?client
   public-client: true
